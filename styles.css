@@ -117,6 +117,10 @@ h1 {
     min-width: 7vw; 
 }
 
+.sign-up-button:hover {
+    cursor: pointer;
+}
+
 .sign-up-button:active {
     animation-name: sign-up-button-animation;
     animation-duration: 0.2s;
@@ -177,3 +181,4 @@ h1 {
 .card p {
     min-width: 10vw;
 }
+
