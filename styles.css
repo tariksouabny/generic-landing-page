@@ -1,11 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Source+Sans+Pro&display=swap');
 body, *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 
     --main-bg-color: #2a2a49;
 
@@ -33,6 +32,23 @@ ul {
 
 nav a {
     color: #ffffff;
+    opacity: 1;
+}
+
+nav a:hover {
+    animation-name: nav-link-hover-animation;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-link-hover-animation {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
 }
 
 a {
@@ -91,11 +107,73 @@ h1 {
     font-size: 40px;
 }
 
+/* TODO: Update sizing */
 .sign-up-button {
     background-color: #1a2aee;
     color: #ffffff;
-    box-shadow: 2px 2px 0px #0717aa;
+    box-shadow: 3px 3px 0px #0717aa;
     border: none;
     border-radius: 3px;
     min-width: 7vw; 
+}
+
+.sign-up-button:active {
+    animation-name: sign-up-button-animation;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sign-up-button-animation {
+    from {
+        box-shadow: 3px 3px 0px #0717aa;
+    }
+
+    to {
+        box-shadow: 0px 0px 0px #0717aa;
+    }
+}
+
+/* Section 2 */
+
+.sec2 {
+    min-height: 100vh;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+
+}
+
+.sec2 .info {
+    font-size: 40px;
+    
+}
+
+.sec2 .showcase-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.showcase-4 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.sub-card {
+    min-height: 20vh;
+    min-width: 10vw;
+    border: 5px solid #1a2aee;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.card p {
+    min-width: 10vw;
 }
