@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+/*--Base Styles--*/
+
 body, *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +10,8 @@ body, *, ::before, ::after {
     font-family: 'Source Sans Pro', sans-serif
 
 }
+
+/*--Nav-Bar--*/
 
 nav {
     min-height: 10vh;
@@ -41,4 +45,7 @@ nav > ul {
     gap: 3em;
 }
 
+
+
+/*--Section-1--*/
 
