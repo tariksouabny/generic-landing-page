@@ -7,8 +7,12 @@ body, *, ::before, ::after {
     font-family: 'Nunito Sans', sans-serif;
 
     --main-bg-color: #2a2a49;
+    --sec2-bg-color: #eeeeee;
+    --sec3-bg-color: #d5d5dd;
 
 }
+
+
 
 /*--Nav-Bar--*/
 
@@ -87,7 +91,7 @@ nav > ul {
     min-height: 20vh;
     min-width: 27vw;
     margin-right: 5vw;
-    background-color: #999999;
+    background-color: #bbbbbb;
     color: white;
     display: flex;
     justify-content: center;
@@ -96,7 +100,7 @@ nav > ul {
     text-transform: uppercase;
     letter-spacing: 2px;
     flex-grow: 2.;
-    opacity: .7;
+    fill-opacity: .1;
     border-radius: 3px;
 }
 
@@ -181,4 +185,55 @@ h1 {
 .card p {
     min-width: 10vw;
 }
+
+/* Section 3 */
+
+.sec3 {
+    background-color: var(--sec3-bg-color);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+.sec3 .quote {
+    font-size: 20px;
+    color:#333335;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    max-width: 50vw;
+
+
+    animation-name: quote-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.sec3 .quote:hover {
+    animation-name: quote-animation-hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes quote-animation {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 2vh
+    }
+}
+
+
+@keyframes quote-animation-hover {
+    from {
+        margin-top: 2vh
+    }
+    to {
+        margin-top: 0vh;
+    }
+}
+
 
