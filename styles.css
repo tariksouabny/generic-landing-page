@@ -1,13 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-/*--Base Styles--*/
-
 body, *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Source Sans Pro', sans-serif;
+
+    --main-bg-color: #2a2a49;
 
 }
 
@@ -16,7 +16,7 @@ body, *, ::before, ::after {
 nav {
     min-height: 10vh;
     display: flex;
-    background-color: #1c1c31;
+    background-color: var(--main-bg-color);
     justify-content: space-around;
     color: #ffffff;
     align-items: center;
@@ -49,3 +49,53 @@ nav > ul {
 
 /*--Section-1--*/
 
+.sec1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    min-height: 90vh;
+    background-color: var(--main-bg-color);
+    color: #ffffff;
+    align-items: center;
+    gap: 10vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 5vw;
+}
+
+.right {
+    min-height: 20vh;
+    min-width: 27vw;
+    margin-right: 5vw;
+    background-color: #999999;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-grow: 2.;
+    opacity: .7;
+    border-radius: 3px;
+}
+
+.right h5 {
+    opacity: 1 !important;
+}
+h1 {
+    font-size: 40px;
+}
+
+.sign-up-button {
+    background-color: #1a2aee;
+    color: #ffffff;
+    box-shadow: 2px 2px 0px #0717aa;
+    border: none;
+    border-radius: 3px;
+    min-width: 7vw; 
+}
