@@ -141,9 +141,11 @@ h1 {
     }
 }
 
+
 /* Section 2 */
 
 .sec2 {
+
     min-height: 100vh;
     background-color: #eeeeee;
     display: flex;
@@ -151,7 +153,6 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 5vh;
-
 }
 
 .sec2 .info {
@@ -207,13 +208,13 @@ h1 {
 
 
     animation-name: quote-animation;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
 }
 
 .sec3 .quote:hover {
     animation-name: quote-animation-hover;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
 }
 
@@ -257,7 +258,39 @@ h1 {
     border-radius: 5px;
 
         
-    box-shadow: 20px 30px 0px #22236c
+    box-shadow: 20px 30px 0px #22236c;
+
+    animation-name: call-to-action-off-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    margin-top: -2vh;
+}
+
+.call-to-action:hover {
+    animation-name: call-to-action-on-hover;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes call-to-action-on-hover{
+    from {
+        transform: translateY(2vh);
+    }
+
+    to {
+        transform: translateY(-2vh);
+    }
+}
+
+@keyframes call-to-action-off-hover {
+    from {
+        transform: translateY(-2vh)
+    }
+
+    to {
+        transform: translateY(2vh);
+    }
 }
 
 .call-to-action .left {
