@@ -119,6 +119,10 @@ h1 {
     border-radius: 3px;
     max-width: 15vw; 
     min-height: 8vh;
+
+    animation-name: sign-up-button-off-click;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
 }
 
 .sign-up-button:hover {
@@ -126,12 +130,22 @@ h1 {
 }
 
 .sign-up-button:active {
-    animation-name: sign-up-button-animation;
+    animation-name: sign-up-button-on-click;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes sign-up-button-animation {
+@keyframes sign-up-button-off-click {
+    from {
+        box-shadow: 0px 0px 0px #0717aa;
+    }
+
+    to {
+        box-shadow: 3px 3px 0px #0717aa;
+    }
+}
+
+@keyframes sign-up-button-on-click {
     from {
         box-shadow: 3px 3px 0px #0717aa;
     }
@@ -140,6 +154,7 @@ h1 {
         box-shadow: 0px 0px 0px #0717aa;
     }
 }
+
 
 
 /* Section 2 */
