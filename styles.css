@@ -260,7 +260,7 @@ h1 {
     align-items: center;
 }
 .call-to-action > * {
-    margin: 1rem;
+    padding: 1rem;
 
 }
 .call-to-action {
